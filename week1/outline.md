@@ -26,7 +26,7 @@ Welcome to Class!
 * Set up your first html file.  In Notepad, select File > Save As.  Save your file as anything.html 
 * Notice, this file isn't a text file anymore! Now it's a website file (HTML file)
 
-### HTML Tag    s
+### HTML Tags
 * HTML tags are the building blocks of websites.  Most tags have an opening and closing tag that you can put stuff between (**nesting**).
 
 This is an opening and closing header tag:
@@ -46,7 +46,7 @@ Experiment with some other tags: What do they do?
 <h3> </h3>
 <strong> </strong>
 <em> </em>
-<p> </p>
+<p> </p>
 ```
 
 Some tags only have one component. They open and close themselves at the same time. What do these do?
@@ -55,7 +55,8 @@ Some tags only have one component. They open and close themselves at the same ti
 <hr />
 ```
 
-You can add properties called **attributes** to further customize some tags.  Here's a tag to add an image to your website:
+### Adding attributes to tags
+You can add properties and data called **attributes** to further customize some tags.  Here's a tag to add an image to your website:
 ```
 <img> </img>
 ```
@@ -66,7 +67,28 @@ We need to pass an image source (src) to the tag so it can render an actual pict
 <img src="mypicture.png"> </img>
 ```
 
+If you find an image you like, right click and select "Copy image address".  This will copy the source/location of your image for you.
+
 ⚠️ 🚨 ** Be careful with formatting!  Watch for opening and closing carets and quotation marks! **
+
+Here's how to create a link using the ** anchor ** tag and the ** href ** attribute.
+
+```
+<a href="http://www.google.com">Link to Google</a>
+```
+
+### Nesting HTML Tags
+You've already nested text nodes inside of HTML tags.  Now let's try nesting some HTML tags inside of other tags!
+
+These tags in combination make make an unordered list.  Notice how the ```li``` tags are nested inside the outside ```ul``` tags:
+```
+<ul>
+    <li>Apples</li>
+    <li>Quinoa</li>
+    <li>Spaghetti</li>
+<ul>
+```
+
 
 
 ### End of Class
