@@ -56,7 +56,7 @@ Some tags only have one component. They open and close themselves at the same ti
 ```
 
 ### Adding attributes to tags
-You can add properties and data called **attributes** to further customize some tags.  Here's a tag to add an image to your webpage:
+You can add properties and data called **attributes** to further customize some tags.  Attributes have keys and values.  The key is the name of the attribute, and the value is the data connected to that attribute. Here's a tag to add an image to your webpage:
 ```
 <img> </img>
 ```
@@ -92,8 +92,8 @@ These tags in combination make make an unordered list.  Notice how the ```<li>``
 Here's an ordered list:
 ```
 <ol>
-	<li>preheat oven</li>
-    <li>mix ingredients</li>    
+    <li>preheat oven</li>
+    <li>mix ingredients</li>
     <li>bake cake</li>
 </ol>
 ```
@@ -104,7 +104,7 @@ Here's your canvas for doing further work.  We're going to build most of the web
 <!DOCTYPE html>
 <html>
 	<head>
-	    <title></title>			
+	    <title></title>		
         <style></style>
 	</head>
 <body>
@@ -152,7 +152,86 @@ h1{
 }
 ```
 
+What happens if you have multiple ```<p>``` tags on a page?  How do the tags get affected by your styles?
 
+Experiment with more properties:
+```
+padding: 10px;
+margin: 50px;
+border: 3px solid black;
+border-radius: 80%;
+```
+
+### Styling with classes
+
+Sometimes we don't want to target all of our tags of the same time for styling.  We can use a ***class*** to target specific pieces of the page.  
+We can add a class attribute to any HTML tag:
+
+Here's our example webpage.  
+```
+<p>My first paragraph!</p>
+<p>My second paragraph!</p>
+<p>My third paragraph!</p>
+
+```
+
+If I want to make the ONLY the second paragraph background red with white font, I could write a CSS class selector like this.  I have to give my class selector a name.  In this case, I called it "myStyle".  You can name your classes anything you want as long as you don't use any spaces.  
+
+```
+.myStyle{
+    background: red;
+    color: white;
+}
+```
+
+⚠️ 🚨 **Be careful with formatting! Classes start with a period! Your style name cannot have any spaces in it!**
+
+Now I have to apply my style class to the second paragraph.  I use the class attribute to lay the style into the page:
+
+```
+<p>My first paragraph!</p>
+<p class="myStyle">My second paragraph!</p>
+<p>My third paragraph!</p>
+
+```
+
+### Using divs
+
+The ```<div>``` is a powerful HTML tag.  We can use it to mark out pieces, literally **divisions** of our website to target for styling:
+
+Add a ```<div>``` to your website.  What do you see when you reload the page?
+```
+<div> </div>
+```
+Nothing changes! We have to add content and styling to make use of the ```<div>```
+
+Let's create another custom CSS styling class.  We will call it ```fancyStyle```.  Let's add it to our div:
+
+```
+<div class="fancyStyle"> </div>
+```
+Save and refresh the page.  What do you expect to see?
+
+We have to add some styling to fancyStyle:
+```
+.fancyStyle{
+    width: 200px;
+    height: 300px;
+    background: blue;
+}
+```
+
+Save and refresh the page.  Now what do you see?
+
+Experiment with other CSS properties:
+```
+width: 50px;
+height: 50px;
+background-image: url("");
+```
+
+### Project
+Start building your personal webpage.
 
 
 ### End of Class
