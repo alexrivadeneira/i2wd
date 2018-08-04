@@ -228,10 +228,23 @@ Experiment with other CSS properties:
 width: 50px;
 height: 50px;
 background-image: url("");
+border: 6px dotted purple;
+border-left: 1px solid green;
 ```
 
 ### Project
 Start building your personal webpage.
+* Start with the empty HTML document
+* Be sure to add a title!
+* Add some headers and paragraphs.
+* Add an image
+* Style some elements
+Stretch goals:
+* Add some links
+* Build some divs and do custom class styling.
+
+### Stretch project:
+* Do a search for ```CSS Flexbox```.  See if you can use this to position a ```<div>``` in interesting ways on your webpage.
 
 
 ### End of Class
