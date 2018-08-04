@@ -239,6 +239,7 @@ Start building your personal webpage.
 * Add some headers and paragraphs.
 * Add an image
 * Style some elements
+
 Stretch goals:
 * Add some links
 * Build some divs and do custom class styling.
@@ -253,4 +254,5 @@ Stretch goals:
 ### Further Exploration
 * ["Fixed mindset" vs "Growth mindset" video and discussion, Carol Dweck](https://www.ted.com/talks/carol_dweck_the_power_of_believing_that_you_can_improve)
  * View code source on some of your favorite webpages
+ * FreeCodeCamp exercises: Basic HTML and HTML5, Basic CSS
 * [W3Schools exercises](https://www.w3schools.com/html/exercise.asp?filename=exercise_attributes1)
