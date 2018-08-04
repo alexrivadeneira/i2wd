@@ -103,10 +103,10 @@ Here's your canvas for doing further work.  We're going to build most of the web
 ```
 <!DOCTYPE html>
 <html>
-	<head>
-	    <title></title>
+    <head>
+        <title></title>
         <style></style>
-	</head>
+    </head>
 <body>
 </body>
 </html> 
