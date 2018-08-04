@@ -12,29 +12,29 @@ Welcome to Class!
 * Everyone is welcome!
 * If you miss one or more classes, you can follow along with [FreeCodeCamp](http://freecodecamp.org) and always feel free to sit in on as many classes as you can make.  
 * Class is 5 weeks long.  
-* Helpful previous knowledge: high school algebra, basic computer skills like navigating websites
+* Helpful previous knowledge: high school algebra, basic computer skills like navigating webpages
 * Thursdays at 10 AM is a [beginner computer class](https://www.berkeleypubliclibrary.org/events/beginner-computer-class-central-ec-0)  
 * Attend all five sessions, submit classwork to earn certificate from the library.
 
 ### Class goals
 * Transition from web consumer to producer/maker/creator
-* Build some fun projects: personal website, interactive game
+* Build some fun projects: personal webpage, interactive game
 * Build foundation so you can keep learning on your own
 
 ### Changing perspective from web content consumer to producer
 * "Peek behind the curtain" with Chrome developer tools.  Right click: "View Page Source"
 * Set up your first html file.  In Notepad, select File > Save As.  Save your file as anything.html 
-* Notice, this file isn't a text file anymore! Now it's a website file (HTML file)
+* Notice, this file isn't a text file anymore! Now it's a webpage file (HTML file)
 
 ### HTML Tags
-* HTML tags are the building blocks of websites.  Most tags have an opening and closing tag that you can put stuff between (**nesting**).
+* HTML tags are the building blocks of webpages.  Most tags have an opening and closing tag that you can put stuff between (**nesting**).
 
 This is an opening and closing header tag:
 ```
 <h1> </h1>
 ```
 
-We can put text between the tags to make a header for our website:  
+We can put text between the tags to make a header for our webpage:  
 ```
 <h1> Welcome to my Site </h1>
 ```
@@ -56,7 +56,7 @@ Some tags only have one component. They open and close themselves at the same ti
 ```
 
 ### Adding attributes to tags
-You can add properties and data called **attributes** to further customize some tags.  Here's a tag to add an image to your website:
+You can add properties and data called **attributes** to further customize some tags.  Here's a tag to add an image to your webpage:
 ```
 <img> </img>
 ```
@@ -69,9 +69,9 @@ We need to pass an image source (src) to the tag so it can render an actual pict
 
 If you find an image you like, right click and select "Copy image address".  This will copy the source/location of your image for you.
 
-⚠️ 🚨 ** Be careful with formatting!  Watch for opening and closing carets and quotation marks! **
+⚠️ 🚨 **Be careful with formatting!  Watch for opening and closing carets and quotation marks!**
 
-Here's how to create a link using the ** anchor ** tag and the ** href ** attribute.
+Here's how to create a link using the **anchor** tag and the **href** attribute.
 
 ```
 <a href="http://www.google.com">Link to Google</a>
@@ -80,7 +80,7 @@ Here's how to create a link using the ** anchor ** tag and the ** href ** attrib
 ### Nesting HTML Tags
 You've already nested text nodes inside of HTML tags.  Now let's try nesting some HTML tags inside of other tags!
 
-These tags in combination make make an unordered list.  Notice how the ```li``` tags are nested inside the outside ```ul``` tags:
+These tags in combination make make an unordered list.  Notice how the ```<li>``` tags are ***nested*** inside the outside ```<ul>``` tags:
 ```
 <ul>
     <li>Apples</li>
@@ -89,6 +89,70 @@ These tags in combination make make an unordered list.  Notice how the ```li``` 
 <ul>
 ```
 
+Here's an ordered list:
+```
+<ol>
+	<li>preheat oven</li>
+    <li>mix ingredients</li>    
+    <li>bake cake</li>
+</ol>
+```
+
+### HTML Document
+Here's your canvas for doing further work.  We're going to build most of the webpage inside of the ```<body>``` tags:
+```
+<!DOCTYPE html>
+<html>
+	<head>
+	    <title></title>			
+        <style></style>
+	</head>
+<body>
+</body>
+</html> 
+```
+
+Move your work so far in between the opening and closing ```<body>``` tags.  Don't forget to give your webpage a title in the ```<title>``` section!  (You'll see that title render in the top of your browser tab).
+
+### Styling with CSS
+We might want to further customize our HTML tags.  We can do that in the ```<style>``` section of our document:
+
+Here's how we can change the properties of all the paragraph, ```<p>``` tags on our webpage.  This is called a ***CSS selector*** because it **selects** a part of the page we want to target for styling.
+
+```
+p{
+
+}
+```
+
+Now we can add some properties:
+```
+p{
+    color: green;
+    font-family: sans-serif;
+}
+```
+
+⚠️ 🚨 **Be careful with formatting!  Watch for opening and closing brackets and make sure every line ends with a semicolon!**
+
+Experiment with more properties on your own:
+
+```
+p{
+    color: green;
+    font-family: sans-serif;
+}
+```
+
+Try targeting another tag like a header:
+```
+h1{
+    background-color: blue;
+    color: white;
+}
+```
+
+
 
 
 ### End of Class
@@ -96,5 +160,5 @@ These tags in combination make make an unordered list.  Notice how the ```li``` 
 
 ### Further Exploration
 * ["Fixed mindset" vs "Growth mindset" video and discussion, Carol Dweck](https://www.ted.com/talks/carol_dweck_the_power_of_believing_that_you_can_improve)
- * View code source on some of your favorite websites
+ * View code source on some of your favorite webpages
 * [W3Schools exercises](https://www.w3schools.com/html/exercise.asp?filename=exercise_attributes1)
