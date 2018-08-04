@@ -23,15 +23,51 @@ Welcome to Class!
 
 ### Changing perspective from web content consumer to producer
 * "Peek behind the curtain" with Chrome developer tools.  Right click: "View Page Source"
-* Creating an html file.
+* Set up your first html file.  In Notepad, select File > Save As.  Save your file as anything.html 
+* Notice, this file isn't a text file anymore! Now it's a website file (HTML file)
 
-### HTML Tags
-* HTML tags are the building blocks of websites.  Most tags have an opening and closing tag that you can put stuff between (nesting).
+### HTML Tag    s
+* HTML tags are the building blocks of websites.  Most tags have an opening and closing tag that you can put stuff between (**nesting**).
 
 This is an opening and closing header tag:
 ```
 <h1> </h1>
 ```
+
+We can put text between the tags to make a header for our website:  
+```
+<h1> Welcome to my Site </h1>
+```
+
+Experiment with some other tags: What do they do?
+```
+<h1> </h1>
+<h2> </h2>
+<h3> </h3>
+<strong> </strong>
+<em> </em>
+<p> </p>
+```
+
+Some tags only have one component. They open and close themselves at the same time. What do these do?
+```
+<br />
+<hr />
+```
+
+You can add properties called **attributes** to further customize some tags.  Here's a tag to add an image to your website:
+```
+<img> </img>
+```
+
+We need to pass an image source (src) to the tag so it can render an actual picture:
+
+```
+<img src="mypicture.png"> </img>
+```
+
+⚠️ 🚨 ** Be careful with formatting!  Watch for opening and closing carets and quotation marks! **
+
 
 ### End of Class
 * Submit your work!  On your desktop, create a folder with your name.  Put your work into that folder.  Drag the folder into the shared folder [here](https://drive.google.com/drive/folders/1samMDc4FVRW4sjId1NHQE8b7aCv7GGLv?usp=sharing). 
