@@ -93,7 +93,7 @@ Here's an ordered list:
 ```
 <ol>
     <li>preheat oven</li>
-    <li>mix ingredients</li>
+    <li>mix ingredients</li>
     <li>bake cake</li>
 </ol>
 ```
