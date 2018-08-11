@@ -254,11 +254,13 @@ h2{
     background-color: yellow;
 }
 
-h2{
+h2:hover{
     background-color: red;
 }
 
 ```
+Here's a translation of the above CSS into English: "Normally, make h2 elements have a yellow background color.  But, when someone hovers over h2 elements with their mouse, change the background color to red."
+
 You can totally transform a previously declared style using a pseudo selector.  Experiment with it!   
 
 ### Project
