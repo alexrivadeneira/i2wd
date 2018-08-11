@@ -222,6 +222,7 @@ We can use the ```display: flex``` property to make the other sections inside th
 ```
 #container{
     display: flex;
+    align-items: stretch;
     width: 100%;
     background-color: red;
 }
@@ -232,12 +233,10 @@ Now specify the dimensions of the #main and #sidebar areas:
 #main{
     width: 65%;
     background: yellow;
-    height: 100%;
 }
 #sidebar{
     width: 35%;
     background: purple;
-    height: 100%;
 }
 ```
 

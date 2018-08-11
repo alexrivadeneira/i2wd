@@ -117,7 +117,7 @@ Move your work so far in between the opening and closing ```<body>``` tags.  Don
 ### Styling with CSS
 We might want to further customize our HTML tags.  We can do that in the ```<style>``` section of our document:
 
-Here's how we can change the properties of all the paragraph, ```<p>``` tags on our webpage.  This is called a ***CSS selector*** because it **selects** a part of the page we want to target for styling.
+Here's how we can change the properties of all the paragraph, ```<p>``` tags on our webpage.  This is called a **CSS selector** because it **selects** a part of the page we want to target for styling.
 
 ```
 p{
