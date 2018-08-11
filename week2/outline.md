@@ -11,6 +11,43 @@ Welcome to Class!
 
 ### Warmup Exercise
 
+* Open the Sublime application on your computer (if you can't find Sublime, click the Windows icon in the lower left hand corner of the page.  In the text box that appears, type Sublime.  You should see Sublime appear in the applications list).
+* Paste in our basic HTML starter document:
+```
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style></style>
+    </head>
+<body>
+</body>
+</html> 
+```
+* Save the file.  Select Save
+
+
+### Sublime
+Sublime is code editing program.  Most importantly, Sublime provides **syntax highlighting** meaning it adds color to our code to help us visualize its structure.  **Syntax** refers to the structure of our code and the rules that govern that structure.  
+
+**Can you remember some rules about HTML code from last class?**
+Review: Where is HTML nested in our HTML document?
+```
+<h1> My header </h1>
+<h1 class="fancyStyle"> My styled header</h1>
+
+```
+**What about CSS syntax?**
+Review: Where is CSS nested in our HTML document?
+```
+h1{
+    background: green;
+    color: white;
+    margin: 15px;
+}
+```
+Sublime can help us catch small syntax errors that we would otherwise have to search for ourselves.
+
 ### Using divs
 
 The ```<div>``` is a powerful HTML tag.  We can use it to mark out pieces, literally **divisions** of our website to target for styling:
@@ -66,4 +103,4 @@ Stretch goals:
 
 ### Further Exploration
 * ["Fixed mindset" vs "Growth mindset" video and discussion, Carol Dweck](https://www.ted.com/talks/carol_dweck_the_power_of_believing_that_you_can_improve)
- * [FreeCodeCamp exercises](https://www.freecodecamp.org): “Front End Development Certifications” > “HTML5 and CSS” – complete all of the exercises there (through “Use RGB to Mix Colors”)
+ * [FreeCodeCamp exercises](https://www.freecodecamp.org): “Front End Development Certifications” > “HTML5 and CSS” – complete all of the exercises there (through “Use RGB to Mix Colors”)
