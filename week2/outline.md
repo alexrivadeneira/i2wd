@@ -5,7 +5,7 @@ Welcome to Class!
 ## Week 2 Outline
 
 ### As you come in:
-* Navigate to [nerdyperson.com](http://www.nerdyperson.com) (this page!)
+* Navigate to [nerdyperson.com](nerdyperson.com) (this page!)
 * One more survey question for you! [Click here](https://goo.gl/forms/YLKsi1OeHUjGi2pQ2)
 * Complete the warmup exercise:
 
@@ -24,19 +24,22 @@ Welcome to Class!
 </body>
 </html> 
 ```
-* Save as an HTML file on the Desktop. Remember the correct format: xxxxxx.html
+* Save as an HTML document on the Desktop.  Remember the file format: xxxx.html
 
 ### Sublime
 Sublime is code editing program.  Most importantly, Sublime provides **syntax highlighting** meaning it adds color to our code to help us visualize its structure.  **Syntax** refers to the structure of our code and the rules that govern that structure.  
 
 **Can you remember some rules about HTML code from last class?**
+
 Review: Where is HTML nested in our HTML document?
 ```
 <h1> My header </h1>
 <h1 class="fancyStyle"> My styled header</h1>
+<a href="http://www.google.com">Link to Google</a>
 
 ```
 **What about CSS syntax?**
+
 Review: Where is CSS nested in our HTML document?
 ```
 h1{
@@ -69,7 +72,7 @@ Sublime can help us catch small syntax errors that we would otherwise have to se
 ```
 
 ### Exercise: Fix the Syntax Errors
-Copy and paste the following template into a fresh file in Sublime.  Save the file as an HTML file.  You should see the code appear with different colors after you save it. What does this file look like in the browser?  It's not pretty because it has a lot of syntax errors.  It's your job to correct the syntax errors and make the page work.
+Copy and paste the following template into a fresh file in Sublime.  Save the file as an HTML file.  You should see the code appear with different colors after you save it. What does this file look like in the browser?  Spoiler alert: it's not pretty because it has a lot of syntax errors.  It's your job to correct the syntax errors and make the page work.
 
 😎 **ProTip** You can quickly view your code in the web browser.  In Sublime, right click anywhere in your HTML document, then select "View in Browser".
 ```
@@ -204,12 +207,12 @@ The nav section should stretch across the entire top of the page and be about 10
 ```
 #nav{
     width: 100%;
-    height: 100px;
+    height: 120px;
     background-color: green;
 }
 ```
 
-We can use the display: flex property to make the other sections inside the container easy to lay out:
+We can use the ```display: flex``` property to make the other sections inside the container easy to lay out:
 ```
 #container{
     display: flex;
@@ -234,6 +237,8 @@ Now specify the dimensions of the #main and #sidebar areas:
 
 Now you have all of the basics to make a great website!
 
+😎 If you're already caught up, check out this document about [CSS Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) to create even more exciting layouts.
+
 ### Bonus: PseudoSelectors
 You can rerender your style completely when a mouse hover event happens using a **CSS Pseudo Selector**.
 
@@ -243,12 +248,13 @@ In this example, we declare a style for an ```h2``` element normally, and then f
 h2{
     background-color: yellow;
 }
+
 h2{
-	background-color: red;
+    background-color: red;
 }
 
 ```
-You can totally transform a previously declared style using a pseudo selector.  Experiment with it!
+You can totally transform a previously declared style using a pseudo selector.  Experiment with it!   
 
 ### Project
 Start building your personal webpage.
@@ -266,7 +272,7 @@ Stretch goals:
 
 
 ### End of Class
-* Submit your work!  On your desktop, create a folder with your name.  Put your work into that folder.  Drag the folder into the shared folder [here](https://drive.google.com/drive/folders/1samMDc4FVRW4sjId1NHQE8b7aCv7GGLv?usp=sharing). 
+* Submit your work for class credit.  On your desktop, create a folder with your name.  Put your work into that folder.  Drag the folder into the shared folder [here](https://drive.google.com/drive/folders/1samMDc4FVRW4sjId1NHQE8b7aCv7GGLv?usp=sharing). 
 
 ### Further Exploration
  * [FreeCodeCamp exercises](https://www.freecodecamp.org): “Front End Development Certifications” > “HTML5 and CSS” – complete all of the exercises there (through “Use RGB to Mix Colors”)
