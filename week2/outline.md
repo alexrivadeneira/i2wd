@@ -24,7 +24,7 @@ Welcome to Class!
 </body>
 </html> 
 ```
-* Save as an HTML file on the Desktop. Remember: xxxxxx.html
+* Save as an HTML file on the Desktop. Remember the correct format: xxxxxx.html
 
 ### Sublime
 Sublime is code editing program.  Most importantly, Sublime provides **syntax highlighting** meaning it adds color to our code to help us visualize its structure.  **Syntax** refers to the structure of our code and the rules that govern that structure.  
@@ -47,7 +47,31 @@ h1{
 ```
 Sublime can help us catch small syntax errors that we would otherwise have to search for ourselves.
 
+### CSS: Class and ID Selectors
+**Class selectors** are used to apply styling to elements that appear multiple times on a page.  You started experimenting with class selectors last class:
+
+```
+.highlightedText{
+    background-color: yellow;
+    font-family: sans-serif;
+    font-weight: 900;
+    color: black;
+}
+```
+**ID selectors** are used to identify a single part of the page.  For example, the "main" part of the page that stores content, or a navigation bar that appears only once per page.
+
+```
+#main{
+    width: 100%;
+    background: black;
+    
+}
+```
+
 ### Exercise: Fix the Syntax Errors
+Copy and paste the following template into a fresh file in Sublime.  Save the file as an HTML file.  You should see the code appear with different colors after you save it. What does this file look like in the browser?  It's not pretty because it has a lot of syntax errors.  It's your job to correct the syntax errors and make the page work.
+
+😎 **ProTip** You can quickly view your code in the web browser.  In Sublime, right click anywhere in your HTML document, then select "View in Browser".
 ```
 
  <!DOCTYPE html>
@@ -124,22 +148,125 @@ border: 6px dotted purple;
 border-left: 1px solid green;
 ```
 
+### Creating a custom element with a div
+Let's build a custom red circle element using a class style and a div.
+First, let's demarcate our div in the HTML document:
+
+```
+<div> </div>
+```
+
+Now let's add a custom class that we will build in the ```<style></style>``` section of our HTML document:
+
+```
+<div class="redCircle"> </div>
+```
+
+When we refresh the page, we don't see anything because we haven't declared and styles for ```redCircle```.  Plus, our div is empty anyway!
+
+Add our style:
+```
+.redCircle{
+    background: red;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+}
+```
+
+### Creating a simple layout with CSS Flexbox
+Let's use our knowledge of divs and CSS to create a basic website layout.  Our goal is to create a website with a navigation section at the top, a main section for our content, and a sidebar.
+
+First, in a fresh HTML document, set up the HTML structure.  Since we're demarcating a number of sections of our website that only appear once, we'll drop in ID divs:
+
+```
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style></style>
+    </head>
+<body>
+    <div id="nav">
+    </div>
+    <div id="container">
+        <div id="main">
+        </div>
+        <div id="sidebar">
+        </div>
+    </div>
+</body>
+</html> 
+```
+
+Now let's add styling to bring our elements to life:
+The nav section should stretch across the entire top of the page and be about 100px high:
+```
+#nav{
+    width: 100%;
+    height: 100px;
+    background-color: green;
+}
+```
+
+We can use the display: flex property to make the other sections inside the container easy to lay out:
+```
+#container{
+    display: flex;
+    width: 100%;
+    background-color: red;
+}
+```
+
+Now specify the dimensions of the #main and #sidebar areas:
+```
+#main{
+    width: 65%;
+    background: yellow;
+    height: 100%;
+}
+#sidebar{
+    width: 35%;
+    background: purple;
+    height: 100%;
+}
+```
+
+Now you have all of the basics to make a great website!
+
+### Bonus: PseudoSelectors
+You can rerender your style completely when a mouse hover event happens using a **CSS Pseudo Selector**.
+
+In this example, we declare a style for an ```h2``` element normally, and then further down in the CSS redeclare the style for a different state (in this case a hover event).
+
+```
+h2{
+    background-color: yellow;
+}
+h2{
+	background-color: red;
+}
+
+```
+You can totally transform a previously declared style using a pseudo selector.  Experiment with it!
+
 ### Project
 Start building your personal webpage.
 * Start with the empty HTML document
 * Be sure to add a title!
 * Add some headers and paragraphs.
 * Add an image
-* Style some elements
+* Add some links to outside websites
+* Style some elements using class and ID selectors
+* Add and style a ```<div>```
 
 Stretch goals:
-* Add some links
-* Build some divs and do custom class styling.
+* Build multiple pages and link them together
+* Do further experimentation with [CSS Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
 
 ### End of Class
 * Submit your work!  On your desktop, create a folder with your name.  Put your work into that folder.  Drag the folder into the shared folder [here](https://drive.google.com/drive/folders/1samMDc4FVRW4sjId1NHQE8b7aCv7GGLv?usp=sharing). 
 
 ### Further Exploration
-* ["Fixed mindset" vs "Growth mindset" video and discussion, Carol Dweck](https://www.ted.com/talks/carol_dweck_the_power_of_believing_that_you_can_improve)
  * [FreeCodeCamp exercises](https://www.freecodecamp.org): “Front End Development Certifications” > “HTML5 and CSS” – complete all of the exercises there (through “Use RGB to Mix Colors”)
