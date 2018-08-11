@@ -5,8 +5,8 @@ Welcome to Class!
 ## Week 2 Outline
 
 ### As you come in:
-* Navigate to nerdyperson.com (this page!)
-* One more survey question for you! [survey](https://goo.gl/forms/YLKsi1OeHUjGi2pQ2)
+* Navigate to [nerdyperson.com](http://www.nerdyperson.com) (this page!)
+* One more survey question for you! [Click here](https://goo.gl/forms/YLKsi1OeHUjGi2pQ2)
 * Complete the warmup exercise:
 
 ### Warmup Exercise
@@ -24,8 +24,7 @@ Welcome to Class!
 </body>
 </html> 
 ```
-* Save the file.  Select Save
-
+* Save as an HTML file on the Desktop. Remember: xxxxxx.html
 
 ### Sublime
 Sublime is code editing program.  Most importantly, Sublime provides **syntax highlighting** meaning it adds color to our code to help us visualize its structure.  **Syntax** refers to the structure of our code and the rules that govern that structure.  
@@ -47,6 +46,46 @@ h1{
 }
 ```
 Sublime can help us catch small syntax errors that we would otherwise have to search for ourselves.
+
+### Exercise: Fix the Syntax Errors
+```
+
+ <!DOCTYPE html>
+
+  <html>
+    <head>
+      <title>My Homepage</title>
+      <style>
+        p{
+          color: red;
+          font-size: 14px;
+        }
+
+        h2{
+          font-family: sans-serif
+          color: green
+        
+
+        h3{
+          font-family: sans-serif;
+        }
+      </style>
+    </head>
+
+    <body>
+      <h2>Welcome to my homepage!
+      
+      <h3>What do you want to see? Choose a link below:<h3>
+
+      <a href="home.html"> Home</a>
+      <a href="blog.html" target="_blank">Blog</a>
+      <a href="pictures.html" Pictures</a>
+      <a href="links.html">Links</a>
+
+      <img src=kitten.jpg alt="kitten picture"></img>
+    </body>
+  </html>
+  ```
 
 ### Using divs
 
