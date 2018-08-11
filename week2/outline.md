@@ -24,23 +24,25 @@ Welcome to Class!
 </body>
 </html> 
 ```
-* Save as an HTML document on the Desktop.  Remember the file format: xxxx.html
+* Save as an HTML document on the Desktop.  Remember the file format: ```xxxx.html``` 
+* Simultaneously open your newly saved webpage in Chrome.
+* Add a title to your page (remember: it will appear in the top of your tab).
 
 ### Sublime
 Sublime is code editing program.  Most importantly, Sublime provides **syntax highlighting** meaning it adds color to our code to help us visualize its structure.  **Syntax** refers to the structure of our code and the rules that govern that structure.  
 
 **Can you remember some rules about HTML code from last class?**
 
-Review: Where is HTML nested in our HTML document?
 ```
 <h1> My header </h1>
 <h1 class="fancyStyle"> My styled header</h1>
 <a href="http://www.google.com">Link to Google</a>
 
 ```
+Review: Where is HTML nested in our HTML document?
+
 **What about CSS syntax?**
 
-Review: Where is CSS nested in our HTML document?
 ```
 h1{
     background: green;
@@ -48,28 +50,9 @@ h1{
     margin: 15px;
 }
 ```
+Review: Where is CSS nested in our HTML document?
+
 Sublime can help us catch small syntax errors that we would otherwise have to search for ourselves.
-
-### CSS: Class and ID Selectors
-**Class selectors** are used to apply styling to elements that appear multiple times on a page.  You started experimenting with class selectors last class:
-
-```
-.highlightedText{
-    background-color: yellow;
-    font-family: sans-serif;
-    font-weight: 900;
-    color: black;
-}
-```
-**ID selectors** are used to identify a single part of the page.  For example, the "main" part of the page that stores content, or a navigation bar that appears only once per page.
-
-```
-#main{
-    width: 100%;
-    background: black;
-    
-}
-```
 
 ### Exercise: Fix the Syntax Errors
 Copy and paste the following template into a fresh file in Sublime.  Save the file as an HTML file.  You should see the code appear with different colors after you save it. What does this file look like in the browser?  Spoiler alert: it's not pretty because it has a lot of syntax errors.  It's your job to correct the syntax errors and make the page work.
@@ -113,6 +96,29 @@ Copy and paste the following template into a fresh file in Sublime.  Save the fi
     </body>
   </html>
   ```
+
+
+### CSS: Class and ID Selectors
+**Class selectors** are used to apply styling to elements that appear multiple times on a page.  You started experimenting with class selectors last class:
+
+```
+.highlightedText{
+    background-color: yellow;
+    font-family: sans-serif;
+    font-weight: 900;
+    color: black;
+}
+```
+**ID selectors** are used to identify a single part of the page.  For example, the "main" part of the page that stores content, or a navigation bar that appears only once per page.
+
+```
+#main{
+    width: 100%;
+    background: black;
+    
+}
+```
+
 
 ### Using divs
 
