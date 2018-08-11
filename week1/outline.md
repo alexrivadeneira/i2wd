@@ -23,7 +23,7 @@ Welcome to Class!
 
 ### Changing perspective from web content consumer to producer
 * "Peek behind the curtain" with Chrome developer tools.  Right click: "View Page Source"
-* Set up your first html file.  In Notepad, select File > Save As.  Save your file as anything.html 
+* Set up your first HTML file.  In Notepad, select File > Save As.  Save your file as anything.html 
 * Notice, this file isn't a text file anymore! Now it's a webpage file (HTML file)
 
 ### HTML Tags
@@ -195,61 +195,9 @@ Now I have to apply my style class to the second paragraph.  I use the class att
 
 ```
 
-### Using divs
-
-The ```<div>``` is a powerful HTML tag.  We can use it to mark out pieces, literally **divisions** of our website to target for styling:
-
-Add a ```<div>``` to your website.  What do you see when you reload the page?
-```
-<div> </div>
-```
-Nothing changes! We have to add content and styling to make use of the ```<div>```
-
-Let's create another custom CSS styling class.  We will call it ```fancyStyle```.  Let's add it to our div:
-
-```
-<div class="fancyStyle"> </div>
-```
-Save and refresh the page.  What do you expect to see?
-
-We have to add some styling to fancyStyle:
-```
-.fancyStyle{
-    width: 200px;
-    height: 300px;
-    background: blue;
-}
-```
-
-Save and refresh the page.  Now what do you see?
-
-Experiment with other CSS properties:
-```
-width: 50px;
-height: 50px;
-background-image: url("");
-border: 6px dotted purple;
-border-left: 1px solid green;
-```
-
-### Project
-Start building your personal webpage.
-* Start with the empty HTML document
-* Be sure to add a title!
-* Add some headers and paragraphs.
-* Add an image
-* Style some elements
-
-Stretch goals:
-* Add some links
-* Build some divs and do custom class styling.
-
 ### Stretch project:
 * Do a search for ```CSS Flexbox```.  See if you can use this to position a ```<div>``` in interesting ways on your webpage.
 
-
-### End of Class
-* Submit your work!  On your desktop, create a folder with your name.  Put your work into that folder.  Drag the folder into the shared folder [here](https://drive.google.com/drive/folders/1samMDc4FVRW4sjId1NHQE8b7aCv7GGLv?usp=sharing). 
 
 ### Further Exploration
 * ["Fixed mindset" vs "Growth mindset" video and discussion, Carol Dweck](https://www.ted.com/talks/carol_dweck_the_power_of_believing_that_you_can_improve)
