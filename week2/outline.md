@@ -39,7 +39,7 @@ Sublime is code editing program.  Most importantly, Sublime provides **syntax hi
 <a href="http://www.google.com">Link to Google</a>
 
 ```
-Review: Where is HTML nested in our HTML document?
+♻ Review: Where is HTML nested in our HTML document?
 
 **What about CSS syntax?**
 
@@ -50,7 +50,7 @@ h1{
     margin: 15px;
 }
 ```
-Review: Where is CSS nested in our HTML document?
+♻ Review: Where is CSS nested in our HTML document?
 
 Sublime can help us catch small syntax errors that we would otherwise have to search for ourselves.
 
@@ -214,6 +214,8 @@ First, in a fresh HTML document, set up the HTML structure.  Since we're demarca
 </body>
 </html> 
 ```
+
+😎 **ProTip** You can quickly generate an empty HTML template in Sublime.  After you have already saved your file as a *.html file somewhere on your local computer, type ```<h```. You will see a menu appear.  If you press the tab key, the HTML template will autocomplete.
 
 Now let's add styling to bring our elements to life:
 The nav section should stretch across the entire top of the page and be about 100px high:
