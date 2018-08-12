@@ -11,7 +11,7 @@ Welcome to Class!
 
 ### Warmup Exercise
 
-* Open the Sublime application on your computer (if you can't find Sublime, click the Windows icon in the lower left hand corner of the page.  In the text box that appears, type Sublime.  You should see Sublime appear in the applications list).
+* Open the Sublime application on your computer (if you can't find Sublime, click the Windows icon in the lower left hand corner of the screen.  In the text box that appears, type ```Sublime```.  You should see Sublime appear in the applications list).
 * Paste in our basic HTML starter document:
 ```
 <!DOCTYPE html>
@@ -66,19 +66,26 @@ Copy and paste the following template into a fresh file in Sublime.  Save the fi
     <head>
       <title>My Homepage</title>
       <style>
+
+        body{
+            background: yellow;
+        }
+
         p{
           color: red;
           font-size: 14px;
-        }
-
+          padding: 15 px;
+          border: 3px solid green;
+          background-color: white;
+        
         h2{
           font-family: sans-serif
           color: green
         
-
         h3{
           font-family: sans-serif;
         }
+
       </style>
     </head>
 
@@ -87,12 +94,12 @@ Copy and paste the following template into a fresh file in Sublime.  Save the fi
       
       <h3>What do you want to see? Choose a link below:<h3>
 
-      <a href="home.html"> Home</a>
-      <a href="blog.html" target="_blank">Blog</a>
-      <a href="pictures.html" Pictures</a>
-      <a href="links.html">Links</a>
+      <a href="https://www.berkeleypubliclibrary.org target="_blank">Berkeley Public Library</a>
+      <a href="https://duckduckgo.com" target="_blank">Search the Web</a>
+      <a href="http://www.unsplash.org">Cool free pictures</a>
 
-      <img src=kitten.jpg alt="kitten picture"></img>
+      <p> Welcome to my wonderful website on the wonderful world wide web!  I hope you enjoy what you find here! </p>
+
     </body>
   </html>
   ```
