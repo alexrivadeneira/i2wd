@@ -253,8 +253,8 @@ Now you have all of the basics to make a great website!
 
 😎 If you're already caught up, check out this document about [CSS Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) to create even more exciting layouts.
 
-### Bonus: Pseudo Classes
-You can rerender your style completely when a mouse hover event happens using a **CSS Pseudo Class**.
+### Bonus: PseudoSelectors
+You can rerender your style completely when a mouse hover event happens using a **CSS Pseudo Selector**.
 
 In this example, we declare a style for an ```h2``` element normally, and then further down in the CSS redeclare the style for a different state (in this case a hover event).
 
@@ -272,15 +272,15 @@ Here's a translation of the above CSS into English: "Normally, make h2 elements 
 
 You can totally transform a previously declared style using a pseudo selector.  Experiment with it!   
 
-### Project: Sky animation
-* Download this image
-https://cdn172.picsart.com/228360378035212.png?r1024x1024
-* Save it on your desktop as ```cloud.png```.  The website will try to download it with some crazy filename - make sure you change the name!
-* Create a new HTML document
-* Write a CSS element selector for ```body``` to set the background to blue.
-* Add the cloud image to your website using an ```<img>``` tag.  Remember the ```src="cloud.png"``` attribute!
-* The image is a little big for the webpage.  Write a class or element selector to change the ```width``` property of your image to make it smaller.  Experiment with different pixel (px) sizes until you get a size you like.
-
+### Project
+Start building your personal webpage.
+* Start with the empty HTML document
+* Be sure to add a title!
+* Add some headers and paragraphs.
+* Add an image
+* Add some links to outside websites
+* Style some elements using class and ID selectors
+* Add and style a ```<div>```
 
 Stretch goals:
 * Build multiple pages and link them together

@@ -229,4 +229,36 @@ Experiment with other animation style declarations and properties:
     animation-iteration-count: infinite;
 ```
 
+
+
+### Project: Sky animation
+* Download this image: 
+https://cdn172.picsart.com/228360378035212.png?r1024x1024
+* Save it on your desktop as ```cloud.png```.  The website will try to download it with some crazy filename - make sure you change the name!
+* Create a new HTML document
+* Write a CSS element selector for ```body``` to set the background to blue.  (Tip: blue is fine, but we can fine tune our color using a hex code color: #6565a4)
+* Add the cloud image to your website using an ```<img>``` tag.  Remember the ```src="cloud.png"``` attribute!
+* The image is a little big for the webpage.  Write a class  selector to change the ```width``` property of your image to make it smaller. (300px will probably do it but feel free to experiment with the size).
+* Don't forget to add your new class as an attribute on your image!
+* In your class selector for your image, set the following properties:
+```
+position: absolute;
+left: 0%;
+top: 30%;
+```
+* If you wrote your class selector correctly and applied to the image tag, you should see a cloud on the screen in about that position.
+* Write a ```@keyframes``` declaration to create an animation.  The simplest animation can go something like this:  At 0% animation completion, set left to 0%.  At 100% animation completion, set left to 100%.
+
+Stretch goals:
+* Add more clouds of different sizes and shapes! Create a storm!
+* Add in the sun!
+* Add in a plane!
+* Add in trees, mountains, lakes - create a scene!
+* Read more about CSS Animations [here](https://www.w3schools.com/css/css3_animations.asp)
+
+### End of Class
+* Submit your work for class credit.  On your desktop, create a folder with your name.  Put your work into that folder.  Drag the folder into the shared folder [here](https://drive.google.com/drive/folders/1samMDc4FVRW4sjId1NHQE8b7aCv7GGLv?usp=sharing). 
+
+### Further Exploration
+ * [FreeCodeCamp exercises](https://www.freecodecamp.org): “Front End Development Certifications” > “HTML5 and CSS” – complete all of the exercises there (through “Use RGB to Mix Colors”)
 * Read more about CSS Animations [here](https://www.w3schools.com/css/css3_animations.asp)
