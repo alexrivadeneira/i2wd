@@ -251,13 +251,13 @@ top: 30%;
 
 Stretch goals:
 * Add more clouds of different sizes and shapes! Create a storm!
-* Add in the sun!
+* Add in the sun!  Animate the background color to create a sunrise.  Use [CSS Box Shadow Properties](https://codersblock.com/blog/creating-glow-effects-with-css/) to add glow to the sun.
 * Add in a plane!
 * Add in trees, mountains, lakes - create a scene!
 * Read more about CSS Animations [here](https://www.w3schools.com/css/css3_animations.asp)
 
 ### End of Class
-* Submit your work for class credit.  On your desktop, create a folder with your name.  Put your work into that folder.  Drag the folder into the shared folder [here](https://drive.google.com/drive/folders/1samMDc4FVRW4sjId1NHQE8b7aCv7GGLv?usp=sharing). 
+* Submit your work for class credit.  On your desktop, create a folder with your name.  Put your work into that folder.  Drag the folder into the shared folder [here](https://drive.google.com/drive/folders/1xwPCotd3c9eIDqwDBhg_UEZ_QJETePuR?usp=sharing). 
 
 ### Further Exploration
  * [FreeCodeCamp exercises](https://www.freecodecamp.org): “Front End Development Certifications” > “HTML5 and CSS” – complete all of the exercises there (through “Use RGB to Mix Colors”)
