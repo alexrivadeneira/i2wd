@@ -174,7 +174,7 @@ If we want to animate the ```redBox``` we can declare an animation in our CSS fi
 Inside the ```@keyframes``` declaration, we specify how we want our CSS to look at different moments in time.  Don't forget to name your animation!
 
 ```
-@keyframes myBoxAnimation{
+@keyframes changingColorAnimation{
 }
 ```
 
@@ -210,7 +210,7 @@ Now all we have to do is add this keyframe property to our ```div```.
     width: 100px;
     height: 100px;
     background: red;
-    animation-name: myBoxAnimation;
+    animation-name: changingColorAnimation;
     animation-duration: 5s;
     animation-iteration-count: 2;
 }
