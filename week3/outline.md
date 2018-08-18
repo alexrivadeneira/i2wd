@@ -203,7 +203,7 @@ The percentage refers to the amount of the animation that has completed.  You co
 
 ♻ **Review:** Do you remember the concept of HTML **nesting**?  CSS keyframes literally nests multiple CSS styles into one segment of CSS.
 
-Now all we have to do is add this keyframe property to our ```div```. 
+Now all we have to do is add this keyframe property to our previously declared style for our div, using the ```animation-name``` property.:
 
 ```
 .redBox{
@@ -238,7 +238,7 @@ https://cdn172.picsart.com/228360378035212.png?r1024x1024
 * Add the cloud image to your webpage using an ```<img>``` tag.  Remember the ```src="cloud.png"``` attribute!
 * The image is a little big for the webpage.  Write a class  selector to change the ```width``` property of your image to make it smaller. (300px will probably do it but feel free to experiment with the size).
 * Don't forget to add your new class as an attribute on your image!
-* In your class selector for your image, set the following properties:
+* In your class selector for your image, also set the following properties in addition to width:
 ```
 position: absolute;
 left: 0%;
