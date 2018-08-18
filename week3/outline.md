@@ -156,39 +156,77 @@ The current transition is jarring.  But if I add the ```transition``` property t
 Experiment with different times and updates using ```transition```!
 
 ### @keyframes
-Let's say we have a div; we'll give it some basic style properties:
 
-#redbox{ background: red; width: 100px; height: 100px; }
-Now, if we want to animate our little red box, all we have to do is declare an animation in the CSS file like so. We use a new declaration called keyframes to label our animation:
+The ```@keyframes``` CSS declaration lets us literally create an animation frame by frame.  Each frame is different CSS style.
 
-Inside the @keyframes declaration, we specify how we want our CSS to look at different moments in time.
+Let's take one of our example divs from earlier:
 
 ```
-@keyframes myAnimation{
+.redBox{
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+
+```
+If we want to animate the ```redBox``` we can declare an animation in our CSS file, and then add that animation to the ```redBox```. We use a new declaration called **keyframes** to label our animation:
+
+Inside the ```@keyframes``` declaration, we specify how we want our CSS to look at different moments in time.  Don't forget to name your animation!
+
+```
+@keyframes myBoxAnimation{
     }
 ```
 
-Okay, but now back to the keyframes feature. Let's say we want to design a more complicated animation that doesn't involve just two states. Let's say we want to animate our div so that it phases through multiple colors and sizes before returning to its original state. Keyframes let us build different CSS styles at different moments in time. We can start at 0% and declare different styles all the way through 100%.
+Keyframes let us build different CSS styles at different moments in time. We can start at 0% and declare different styles all the way through 100%:
 
 For example, if we want our box to transition from red to blue to green and back to red, we can write something like this:
 
 ```
-    @keyframes myAnimation{
-     10%{background: blue;}
-     50%{background: green;}
-     100%{background: red;}
+    @keyframes myBoxAnimation{
+
+     10%{
+         background: blue;
+         }
+
+     50%{
+         background: green;
+        }
+
+     100%{
+         background: red;
+         }
     }
 
 ```
 
-Now all we have to do is add this keyframe property to our redbox div. (In this case, we'll also remove our redbox psuedoselector.)
+♻ **Review:** Do you remember the concept of HTML **nesting**?  CSS keyframes literally nests multiple CSS styles into one segment of CSS.
+
+The percentage refers to the amount of the animation that has completed.  You could theoretically write a new CSS style for every integer between 1 and 100 in this case.
+
+Now all we have to do is add this keyframe property to our ```div```. 
 
 ```
-#redbox{ animation: myAnimation; }
+.redBox{
+    width: 100px;
+    height: 100px;
+    background: red;
+    animation-name: myBoxAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+}
+
 ```
 
 We also need to add additional properties telling how long to run the animation, and whether to repeat it.
 
+
+Experiment with other animation style declarations and properties:
 ```
-  #redbox{ animation: myAnimation infinite 15s;}
+    animation-name: example;
+    animation-duration: 5s;
+    animation-delay: -1s;
+    animation-iteration-count: infinite;
 ```
+
+* Read more about CSS Animations [here](https://www.w3schools.com/css/css3_animations.asp)
