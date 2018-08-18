@@ -38,7 +38,7 @@ The second div should be 100px high by 150px wide and have a blue background col
 The third div should be 200px high by 250px wide and have a yellow background color.
 
 ```
-♻ **Review:** How can you apply different styles to different divs?  Remember use **class selectors**.  Here's an example of a class selector if you forgot how to do that:
+♻ **Review:** How can you apply different styles to different divs?  Remember: use **class selectors**.  Here's an example of a class selector if you forgot how to do that:
 
 ```
 <!DOCTYPE html>
@@ -69,7 +69,7 @@ The third div should be 200px high by 250px wide and have a yellow background co
 
 💃 If you finish early, add some margins to your divs to spread them out!
 
-## Making our website more dynamic: CSS Animations and Pseudo Selectors
+## Making our website more dynamic: Pseudo Classes and CSS Animations
 
 ### Pseudo Classes
 
@@ -88,7 +88,7 @@ h2:hover{
 ```
 Here's a translation of the above CSS into English: "Normally, make h2 elements have a yellow background color. But, when someone hovers over h2 elements with their mouse, change the background color to red."
 
-The pseudo class declaration replaces style declarations from the previous declaration.  We can selectively alter properties, while leaving others in tact.  For example, maybe we always want to keep our h2's font size 72px, with 100% width, and text aligned center, but want to change the background color on a hover event:
+The pseudo class declaration replaces style declarations from the previous declaration.  We can selectively alter properties, while leaving others intact.  For example, maybe we always want to keep our h2's font size 72px, width at 100% of the container, and text aligned center, but want to change the background color on a hover event:
 
 ```
 h2{
@@ -104,7 +104,7 @@ h2:hover{
 ```
 We reference only the properties we want to update or change. Everything else stays the same!
 
-You can totally transform a previously declared style using a pseudo selector. Let's experiment with pseudoselectors on the divs you created for the warmup exercise!  Try the following:
+You can totally transform a previously declared style using a pseudoselector. Let's experiment with pseudoselectors on the divs you created for the warmup exercise!  Try the following:
 
 * On a hover event, change the size of one of your divs.
 * On a hover event, change the color of one of your divs.
@@ -112,7 +112,7 @@ You can totally transform a previously declared style using a pseudo selector. L
 
 ### CSS animations
 
-CSS animations let us create some really impressive effects using only CSS (no Flash or JavaScript!) This like a more complicated and powerful version of the CSS psuedo classes. First of all, we can use the CSS ```transition``` property to **ease** the transition between states.  In this example, I created a class style called ```myRedBox```.  On a hover event, ```myRedBox``` turns into a smaller circle with a green background.
+CSS animations let us create some really impressive effects using only CSS (no Flash or JavaScript!).  CSS animations are a more powerful version of the CSS psuedo classes. Right of the bat, we can drastically improve the way our pseudoselector state change looks! We can use the CSS ```transition``` property to **ease** the transition between states.  In this example, I created a class style called ```myRedBox```.  On a hover event, ```myRedBox``` turns into a smaller circle with a green background:
 
 ```
 .myRedBox{
@@ -157,7 +157,7 @@ Experiment with different times and updates using ```transition```!
 
 ### @keyframes
 
-The ```@keyframes``` CSS declaration lets us literally create an animation frame by frame.  Each frame is different CSS style.
+The ```@keyframes``` CSS declaration lets us literally create an animation frame by frame.  Each frame contains a different CSS style for a different state of our animation.
 
 Let's take one of our example divs from earlier:
 
@@ -175,15 +175,15 @@ Inside the ```@keyframes``` declaration, we specify how we want our CSS to look 
 
 ```
 @keyframes myBoxAnimation{
-    }
+}
 ```
 
-Keyframes let us build different CSS styles at different moments in time. We can start at 0% and declare different styles all the way through 100%:
+```@keyframes``` let us build different CSS styles for different moments in time. We can start at 0% and declare different styles all the way through 100% of the animation's completion, just like a cartoon animator creates different images for different moments in time:
 
 For example, if we want our box to transition from red to blue to green and back to red, we can write something like this:
 
 ```
-    @keyframes myBoxAnimation{
+    @keyframes changingColorAnimation{
 
      10%{
          background: blue;
@@ -199,10 +199,9 @@ For example, if we want our box to transition from red to blue to green and back
     }
 
 ```
+The percentage refers to the amount of the animation that has completed.  You could theoretically write a new CSS style for every integer between 1 and 100 in this case.
 
 ♻ **Review:** Do you remember the concept of HTML **nesting**?  CSS keyframes literally nests multiple CSS styles into one segment of CSS.
-
-The percentage refers to the amount of the animation that has completed.  You could theoretically write a new CSS style for every integer between 1 and 100 in this case.
 
 Now all we have to do is add this keyframe property to our ```div```. 
 
@@ -218,26 +217,25 @@ Now all we have to do is add this keyframe property to our ```div```.
 
 ```
 
-We also need to add additional properties telling how long to run the animation, and whether to repeat it.
-
+We also need to add additional properties telling how long to run the animation, and how many times to repeat it.
 
 Experiment with other animation style declarations and properties:
+
 ```
-    animation-name: example;
     animation-duration: 5s;
     animation-delay: -1s;
     animation-iteration-count: infinite;
 ```
 
-
-
 ### Project: Sky animation
+For this week's project, you're going to use your knowledge of CSS animations to build a simple sky animation.
+
 * Download this image: 
 https://cdn172.picsart.com/228360378035212.png?r1024x1024
 * Save it on your desktop as ```cloud.png```.  The website will try to download it with some crazy filename - make sure you change the name!
 * Create a new HTML document
-* Write a CSS element selector for ```body``` to set the background to blue.  (Tip: blue is fine, but we can fine tune our color using a hex code color: #6565a4)
-* Add the cloud image to your website using an ```<img>``` tag.  Remember the ```src="cloud.png"``` attribute!
+* Write a CSS element selector for ```body``` to set the background to blue.  (Tip: blue is fine, but we can fine tune our color using a hex code color: ```#6565a4``` is even better).
+* Add the cloud image to your webpage using an ```<img>``` tag.  Remember the ```src="cloud.png"``` attribute!
 * The image is a little big for the webpage.  Write a class  selector to change the ```width``` property of your image to make it smaller. (300px will probably do it but feel free to experiment with the size).
 * Don't forget to add your new class as an attribute on your image!
 * In your class selector for your image, set the following properties:
@@ -247,7 +245,7 @@ left: 0%;
 top: 30%;
 ```
 * If you wrote your class selector correctly and applied to the image tag, you should see a cloud on the screen in about that position.
-* Write a ```@keyframes``` declaration to create an animation.  The simplest animation can go something like this:  At 0% animation completion, set left to 0%.  At 100% animation completion, set left to 100%.
+* Now, write a ```@keyframes``` declaration to create the animation.  In this case, we want our cloud to start at 0% left on the page and progress to 100% left (move from the left side of the page all the way to the right side). The simplest animation would translate like this into English:  "At 0% animation completion, set left to 0%.  At 100% animation completion, set left to 100%."
 
 Stretch goals:
 * Add more clouds of different sizes and shapes! Create a storm!
