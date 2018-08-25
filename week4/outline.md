@@ -208,10 +208,29 @@ console.log("hi mom!");
 Putting aside the computer for a moment, let's think through the logic of adding a button.  Review from last class how the cloud moved across the screen.  How can we enable or disable that from happening?  How could we animate this "the hard way"?
 
 ### document.querySelector and variables
-So far we've been interacting with numbers, booleans and strings.   Now let's access some part of the page.
+So far we've been interacting with numbers, booleans and strings.   Now let's access some part of the page, one of the Document Objects we talked about earlier (the elements that make up our HTML page you've been working with since the first day).
 QuerySelector will return the first instance of the input that matches our request.
-document.querySelector.
 
+In order to be able to access and use the Document Objects later on, we need to assign them to variables.  A variable is a space in memory that the computer reserves for some data.  It lets us carve out some space to store data, and it's name is always a pointer or window to that data that we can access at any time.
+
+```
+var myHeader = document.querySelector('h1');
+console.log(myHeader);
+```
+
+What do you see logged to the console?
+
+```querySelector``` returns the first instance of an element that matches our selection.
+
+We can also ask for specific elements by id or class:
+
+```
+var blogSection = document.querySelector('#blog');
+console.log(blogSection);
+
+var firstPost = document.querySelector('.post');
+console.log(firstPost);
+```
 
 
 ### Modifying styling with JavaScript
@@ -262,7 +281,7 @@ The first line declares a new variable, or ```var```, literally reserving some s
 
 ### onclick events
 
-Here's another html element, the button.  Add it to your body:
+Here's another HTML element, the ```<button>```.  Add it to your body:
 ```
 <button></button>
 ```
