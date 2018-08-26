@@ -235,7 +235,7 @@ console.log(firstPost);
 
 ### Modifying styling with JavaScript
 
-Let's use what we learned about ```querySelector``` and variables to make some changes to our CSS using JavaSCript. Here's a starter template. Before you render it in the browser, check to see if you can reason about what it does:
+Let's use what we learned about ```querySelector``` and variables to make some changes to our CSS using JavaScript. Here's a starter template. Before you render it in the browser, check to see if you can reason about what it does:
 
 ```
 <!DOCTYPE html>
@@ -356,8 +356,8 @@ In our example, we have some functions in the ```<script>``` section of the page
 ```
 
 Stretch goals:
-* Change the actions that the buttons takae
-* Add another button and make it do something else
+* Change the actions that the buttons trigger
+* Add another button and make it perform another action (write another function!)
 * Add buttons that reverse the current actions
 
 
@@ -367,3 +367,4 @@ Stretch goals:
 ### Further Exploration
  * [FreeCodeCamp exercises](https://www.freecodecamp.org): All of the JavaScript exercises.
 * [W3Schools Intro to JavaScript](https://www.w3schools.com/js/js_intro.asp)
+* Advanced: [You Don't Know JavaScript](https://github.com/getify/You-Dont-Know-JS)
