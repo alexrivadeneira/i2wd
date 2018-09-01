@@ -253,6 +253,6 @@ myElement.style.animationName = "myAnimation";
 
 
 ### Further Exploration
-* Check out other computer-related events at the (Library)[https://www.berkeleypubliclibrary.org/events/computers]!
+* Check out other computer-related events at the [Library](https://www.berkeleypubliclibrary.org/events/computers)!
 * [FreeCodeCamp exercises](https://www.freecodecamp.org): Keep going!
 
