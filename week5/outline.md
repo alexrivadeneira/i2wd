@@ -243,6 +243,10 @@ myElement.style.animationName = "myAnimation";
 </html>
 ```
 
+### Stretch goals:
+* Check out the ```<input>``` HTML element.  Can you take in user text input, for example, a number of seconds for the animation?  Check out some documentation about input [here](https://www.w3schools.com/html/html_forms.asp).  You can use the ```.value``` property on an input element to get the user input.  
+* To test it out, create an input element, give it a unique ID, query select for that ID, and then console.log the resulting element's value.
+
 
 ### End of Class
 * Submit your work for class credit.  On your desktop, create a folder with your name.  Put your work into that folder.  Drag the folder into the shared folder [here](https://drive.google.com/drive/folders/15pl4yzGx6OhXQKHbW8g1cKAkvKkaJenn?usp=sharing).
