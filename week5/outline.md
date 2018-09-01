@@ -25,18 +25,20 @@ Using JavaScript, we're going to add a button to the cloud project that lets the
 
 ## JavaScript functions
 
-JavaScript functions are used to wrap a code block so that you can control when that code gets executed.  Here's the general format for a **function definition**.  Note the ```//``` symbol "comments out" the line, so it won't get executed and you can write notes. In this case, you would replace the line starting with ```//``` with your actual code.
+JavaScript functions are used to wrap a code block so that you can control when that code gets executed.  Here's the general format for a **function definition**. 
 ```
 function nameOfFunction(){
   // your code goes here
 }
 ```
+🕵 Note the ```//``` symbol "comments out" the line, so it won't get executed and you can write notes in English in your code. In this case, you would replace the line starting with ```//``` with your actual code.
+
 To use your function, you need to invoke it, using the name of the function plus parentheses like so.  Below is a **function invocation**, meaning the code inside the block in our function definition would get executed when the computer runs this line of code:
 ```
 nameOfFunction();
 ```
 
-Here are some examples of simple functions.  Can you reason about what they do?
+Here are some examples of simple function definitions.  Can you reason about what they do?
 
 ```
 function doSomething(name){
@@ -53,7 +55,7 @@ function changeColor(){
 }
 
 ```
-Some functions can explicitly return a value, like the first and second functions in the example above.  Other functions might make changes to the state of our webpage, for example, a function can change DOM elements, and not explicitly return anything (in that case, the function will return ```undefined```).
+Some functions can explicitly return a value, like the first and second functions in the example above.  Other functions might make changes to the state of our webpage, changing DOM elements, and not explicitly return anything (in that case, the function will actually return ```undefined```).
 
 Your function can take an input.  If you build your function to take in input, you would declare that in the function definition.  In the examples above, ```addNums()``` and ```doSomething()``` both take inputs.  How many inputs do each of those functions take?
 
@@ -101,8 +103,6 @@ console.log(doSomething('Richard'));
 ```console.log()``` is really useful to let us debug functions and see if we're getting the expected output/return value!
 
 
-
-
 ### onclick events
 
 During the warmup exercise, we experimented with the ```<button>``` HTML element.  Now let's use its ```onclick``` attribute to wire buttons to functions.
@@ -116,7 +116,7 @@ We can pass function invocations to the ```onclick``` attribute like so:
 ### Exercise - wiring functions and buttons
 In the code below, we have some functions in the ```<script>``` section of the HTML document.  Can you figure out how to connect them the buttons via the ```onclick``` attribute?
 
-Before you begin, notice the functions in this HTML document.  Do any of these functions take input or have output?  What type of function are these?
+Before you begin, notice the functions in this HTML document.  Do any of these functions take input or have output?  What type of function are these?  What's going on in the ```<body>``` section?
 
 ```
 <!DOCTYPE html>
@@ -187,17 +187,19 @@ Stretch goals:
 2. Remember, to animate the cloud, we need to add the animation name to the selector that is used to build the cloud (the class ```cloudImage```).
 Remember the CSS properties that let us build an animation:
 ```
-animationName: myAnimation;
-animationDuration: 5s;
+/* CSS in the <style> section of the HTML document: */
+animation-name: myAnimation;
+animation-duration: 5s;
 ```
-3. Connect the ```blowWind()``` function to the button using the ```onclick``` attribute in the button element.
+3. In the ```<script>``` section of the HTML document, Connect the ```blowWind()``` function to the button using the ```onclick``` attribute in the button element.
 4. Throw a ```console.log()``` line into your ```blowWind()``` function to make sure the button is connected to the function.
-5. We need to complete the ```blowWind()``` function in the ```<script>``` section of the page.  In ```blowWind()```, you need to use ```document.querySelector``` to get the cloud div using its class, ```cloudImage```.  Assign the result of the querySelector function to a new variable.
-6. Once you have the variable pointing to the cloud, update the cloud using the ```.style``` property.  For example, if I want to add an animation to an element I previously queried, I could do something like this:
+5. We need to complete the ```blowWind()``` function.  In ```blowWind()```, you need to use ```document.querySelector``` to get the cloud div using its class, ```cloudImage```.  Assign the result of the querySelector function to a new variable.
+6. Once you have the variable pointing to the cloud, update the cloud using the ```.style``` property.  For example, if I want to add an animation to an element in JavaScript I could do something like this:
+
 ```
 myElement.style.animationName = "myAnimation";
 ```
-7. Don't forget to also update the ```animationDuration``` property.  Update it using a string like ```"5s"```.
+7. Don't forget to also update the ```animationDuration``` property on a separate line.  Update it using a string like ```"5s"```.
 
 ```
 <!DOCTYPE html>
@@ -232,7 +234,6 @@ myElement.style.animationName = "myAnimation";
 
     <button>Click for a gust of air!!</button> 
 
-    
     <script>
         function blowWind(){
            
@@ -244,8 +245,10 @@ myElement.style.animationName = "myAnimation";
 ```
 
 ### Stretch goals:
-* Check out the ```<input>``` HTML element.  Can you take in user text input, for example, a number of seconds for the animation?  Check out some documentation about input [here](https://www.w3schools.com/html/html_forms.asp).  You can use the ```.value``` property on an input element to get the user input.  
-* To test it out, create an input element, give it a unique ID, query select for that ID, and then console.log the resulting element's value.
+* Check out the ```<input>``` HTML element.  Can you take in some user text input, for example, the user's request on how many seconds to run the animation? Check out some documentation about input [here](https://www.w3schools.com/html/html_forms.asp
+* You can use the ```.value``` property on an input element to get the user input.  
+* To test it out, create an ```<input>``` element, give it a unique ID, use ```document.querySelector``` to access that element in JavaScript, and then ```console.log()``` the resulting element's ```.value``` property.
+* Remember: the CSS style ```animation-duration``` accepts a string in the format "some number plus the letter s", eg ```5s```.  So you'll have to figure out how to manipulate your strings to get this desired input.
 
 
 ### End of Class
