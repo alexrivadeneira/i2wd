@@ -21,19 +21,17 @@ Experiment with the following:
 * Read the [docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button) and experiment with other attributes!
 
 ### Motivation/Project
-Using JavaScript, we're eventually going to take our cloud project from two week and rework it so that instead of just running when the user loads the page, we can create a button that will allow the user to turn on the animation.
-
-🙃 Reminder! Here's the keyboard shortcut for opening the Chrome Developer Tools / Console: Control+Shift+J
+Using JavaScript, we're going to add a button to the cloud project that lets the user trigger the animation.
 
 ## JavaScript functions
 
-JavaScript functions are used to wrap a code block so that you can control when that code gets executed.  Here's the general format for a **function definition**.  Note the ```//``` symbol "comments out" the line, so it won't get executed. In this case, you would replace the line starting with ```//``` with your actual code.
+JavaScript functions are used to wrap a code block so that you can control when that code gets executed.  Here's the general format for a **function definition**.  Note the ```//``` symbol "comments out" the line, so it won't get executed and you can write notes. In this case, you would replace the line starting with ```//``` with your actual code.
 ```
 function nameOfFunction(){
   // your code goes here
 }
 ```
-To use your function, you need to invoke it, using the name of the function plus parentheses like so:
+To use your function, you need to invoke it, using the name of the function plus parentheses like so.  Below is a **function invocation**, meaning the code inside the block in our function definition would get executed when the computer runs this line of code:
 ```
 nameOfFunction();
 ```
@@ -59,14 +57,14 @@ Some functions can explicitly return a value, like the first and second function
 
 Your function can take an input.  If you build your function to take in input, you would declare that in the function definition.  In the examples above, ```addNums()``` and ```doSomething()``` both take inputs.  How many inputs do each of those functions take?
 
-Here are the invocations for all of the functions written above.   These lines "turn on" and run the functions declared above. We can invoke a function as many times as we'd like.
+Here are some invocations using the function definitions written above.   These lines "turn on" and run the functions declared above. We can invoke a function as many times as we'd like.
 
 ```
 doSomething('Bob');
 addNums(1,2);
 changeColor();
 
-// We can keep invoking these as we'd like:
+// We can keep invoking these as we wish:
 
 doSomething('Mary');
 doSomething('Beth');
@@ -80,7 +78,9 @@ Question: After we've run changeColor() once on a page, what will happen if we t
 
 
 ### console.log() revisited
-Remember those parentheses at the end of ```console.log()```?  ```console.log()``` is a function also! It's a built in function in JavaScript.  As you remember, ```console.log``` takes in an input, and spits that input out into the console that we can see in the Chrome Developer tools. You can pass expressions to console.log() that will get evaluated before they hit the console, including functions!
+Remember those parentheses at the end of ```console.log()```?  ```console.log()``` is a function also! It's a built in function in JavaScript.  As you remember, ```console.log``` takes in an input, and spits that input out into the console that we can see in the Chrome Developer tools. You can pass expressions to ```console.log()``` that will get evaluated before they hit the console, including functions!
+
+🙃 Reminder! Here's the keyboard shortcut for opening the Chrome Developer Tools / Console: Control+Shift+J
 
 ```
 // review from last week:
@@ -91,7 +91,7 @@ console.log(100);
 console.log('Reading' + ' is cool!!');
 console.log(100 + 1);
 
-// now, more exciting:
+// now, more exciting complex expressions:
 
 console.log(addNums(1,2));
 console.log(addNums(100,1));
@@ -110,11 +110,11 @@ During the warmup exercise, we experimented with the ```<button>``` HTML element
 We can pass function invocations to the ```onclick``` attribute like so:
 
 ```
-<button onclick="myFunction()">Run my function!</button>
+<button onclick="myFunction()">Click here to run the function!</button>
 ```
 
 ### Exercise - wiring functions and buttons
-In our example, we have some functions in the ```<script>``` section of the page.  Can you figure out how to add them to the buttons via the ```onclick``` attribute?
+In the code below, we have some functions in the ```<script>``` section of the HTML document.  Can you figure out how to connect them the buttons via the ```onclick``` attribute?
 
 Before you begin, notice the functions in this HTML document.  Do any of these functions take input or have output?  What type of function are these?
 
@@ -179,6 +179,69 @@ Stretch goals:
 * Change the actions that the buttons trigger
 * Add another button and make it perform another action (write another function!)
 * Add buttons that reverse the current actions
+* What output do you see if you use ```console.log()``` to display the return value of these functions?
+
+### Project: Control the Cloud Animation With a Button
+
+1. Save and examine the starter code below - what do you have?  A good place to start is looking in the ```<body>``` to see the main structure of the page.  Also notice the ```<style>``` section has an animation in it.  What does that animation do? 
+2. Remember, to animate the cloud, we need to add the animation name to the selector that is used to build the cloud (the class ```cloudImage```).
+Remember the CSS properties that let us build an animation:
+```
+animationName: myAnimation;
+animationDuration: 5s;
+```
+3. Connect the ```blowWind()``` function to the button using the ```onclick``` attribute in the button element.
+4. Throw a ```console.log()``` line into your ```blowWind()``` function to make sure the button is connected to the function.
+5. We need to complete the ```blowWind()``` function in the ```<script>``` section of the page.  In ```blowWind()```, you need to use ```document.querySelector``` to get the cloud div using its class, ```cloudImage```.  Assign the result of the querySelector function to a new variable.
+6. Once you have the variable pointing to the cloud, update the cloud using the ```.style``` property.  For example, if I want to add an animation to an element I previously queried, I could do something like this:
+```
+myElement.style.animationName = "myAnimation";
+```
+7. Don't forget to also update the ```animationDuration``` property.  Update it using a string like ```"5s"```.
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+    <title>I Wandered Lonely As a Cloud</title>
+    <style> 
+
+    body{
+        background: #6565a4;
+    }
+
+    .cloudImage{
+        width: 300px;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+    }
+
+    @keyframes cloudAnimation{
+        0%{
+            left: 0;
+        }
+        100%{
+            left: 100%;
+        }
+    }
+    </style>
+</head>
+<body>
+    <img src="https://cdn172.picsart.com/228360378035212.png?r1024x1024" class="cloudImage"/>
+
+    <button>Click for a gust of air!!</button> 
+
+    
+    <script>
+        function blowWind(){
+           
+        }
+    </script>
+
+</body>
+</html>
+```
 
 
 ### End of Class
@@ -186,7 +249,6 @@ Stretch goals:
 
 
 ### Further Exploration
-* [FreeCodeCamp exercises](https://www.freecodecamp.org): Keep going!
 * Check out other computer-related events at the (Library)[https://www.berkeleypubliclibrary.org/events/computers]!
-* [W3Schools Intro to JavaScript](https://www.w3schools.com/js/js_intro.asp)
-* Advanced: [You Don't Know JavaScript](https://github.com/getify/You-Dont-Know-JS)
+* [FreeCodeCamp exercises](https://www.freecodecamp.org): Keep going!
+
